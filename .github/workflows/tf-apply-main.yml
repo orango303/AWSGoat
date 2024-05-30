@@ -57,9 +57,9 @@ jobs:
         terraform init 
         
     # Installs boto3
-    - uses: actions/setup-python@v2
+    - uses: actions/setup-python@v4 # Updated to v4
       with:
-        python-version: 3
+        python-version: '3.x'
     - name: install
       run: |
         pip install boto3

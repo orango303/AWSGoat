@@ -2,11 +2,11 @@ name: Build and Attest
 
 on:
   push:
-    branches: [ master ]
+    branches: [ master ]  # Make sure this matches your branch
 
 permissions:
-  id-token: write
-  contents: write
+  id-token: write   # Needed to sign the attestation
+  contents: write   # Needed to upload the attestation
 
 jobs:
   build:
